@@ -17,7 +17,6 @@ from omegaconf import DictConfig
     register_criterion,
     CRITERION_REGISTRY,
     CRITERION_DATACLASS_REGISTRY,
-) = registry.setup_registry(
     "--criterion", base_class=BaseCriterion, default="cross_entropy"
 )
 
